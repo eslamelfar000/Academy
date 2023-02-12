@@ -734,6 +734,9 @@ body {
 .partner .row .swiper .swiper-slide {
   height: 100%;
   padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .partner .row .swiper .swiper-slide .slide-img img {
