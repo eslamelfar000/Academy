@@ -1139,6 +1139,8 @@ button.accordion.is-open {
 @media (max-width: 450px) {
   .webiner .row .webiner-img .man-intro {
     top: 40%;
+    right: 5%;
+    width: 110px;
   }
 
   .webiner .row .webiner-img p {
