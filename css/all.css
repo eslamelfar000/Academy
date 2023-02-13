@@ -969,9 +969,51 @@ button.accordion.is-open {
   align-items: center;
 }
 
+.webiner .row .webiner-img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.webiner .row .webiner-img .cover {
+  width: 100%;
+}
+
+.webiner .row .webiner-img .man {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50%;
+}
+
+.webiner .row .webiner-img .man-intro {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+}
+
+.webiner .row .webiner-img p {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.9;
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+  padding-right: 30px;
+}
+
 .webiner .row .webiner-info .web-logo {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.webiner .row .webiner-info .web-logo img {
+  width: 80px;
+  margin-right: 20px;
 }
 
 .webiner .row .webiner-info .web-logo span {
@@ -1039,10 +1081,68 @@ button.accordion.is-open {
   border-color: white;
 }
 
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .webiner .row .webiner-img .man-intro {
+    right: 12%;
+    width: 140px;
+  }
+
+  .webiner .row .webiner-img p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .webiner .row .webiner-img .man-intro {
+    right: 10%;
+    width: 130px;
+  }
+
+  .webiner .row .webiner-img p {
+    font-size: 11px;
+    bottom: 0px;
+  }
+}
+
 @media (max-width: 991px) {
   .webiner .row .colom {
     margin-top: 30px;
     order: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .webiner .row .webiner-img .man-intro {
+    right: 10%;
+    width: 130px;
+  }
+
+  .webiner .row .webiner-img p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .webiner .row .webiner-img .man-intro {
+    right: 10%;
+    width: 120px;
+  }
+
+  .webiner .row .webiner-img p {
+    font-size: 11px;
+    bottom: 5px;
+    padding-right: 10px;
+    left: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .webiner .row .webiner-img .man-intro {
+    top: 40%;
+  }
+
+  .webiner .row .webiner-img p {
+    font-size: 10px;
   }
 }
 
